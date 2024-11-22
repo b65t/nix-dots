@@ -1,0 +1,84 @@
+* {
+    bg: rgba(35, 38, 52, 0.3);
+    bg2: #292c3c;
+    hv: #babbf1;
+    txt: #c6d0f5;
+    txt2: #293136;
+    ug: #C0C0C0;
+    border: #85c1dc;
+
+    background-color: @bg;
+    color: @txt;
+}
+
+configuration {
+    display-drun: " ";
+}
+
+window {
+    width: 520px;
+    location: center;
+    border: 0;
+    border-radius: 8;
+    border-color: @border;
+}
+
+ mainbox {
+   background-color: transparent;
+    padding: 20px;
+}
+
+message {
+    padding: 5px;
+}
+
+inputbar {
+    text-color: @txt;
+    padding: 10px;
+    margin: 10px;
+    background-color: @bg;
+    border-radius: 10px;
+}
+
+entry,prompt,case-indicator {
+  text-font: inherit;
+  text-color: @txt;
+  background-color: transparent;
+}
+
+listview {
+    lines: 6;
+    padding: 8px;
+    background-color: transparent;
+}
+
+prompt {
+    enabled: true;
+    background-color: transparent;
+    text-color: inherit;
+} 
+
+
+element {
+    padding: 8px;
+    color: @txt;
+    font: inherit;
+    border-radius: 8;
+    background-color: transparent;
+}
+
+element-text {
+    background-color: inherit;
+    text-color: inherit;
+}
+
+element selected.normal {
+   background-color: @hv;
+   color: @txt2;
+}
+
+element-text, element-icon {
+    background-color: inherit;
+    color: inherit;
+}
+
