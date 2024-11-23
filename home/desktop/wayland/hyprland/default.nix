@@ -220,7 +220,7 @@ layerrule = blur, dunst
 layerrule = ignorezero, dunst
 layerrule = blurpopups, dunst
 
-windowrulev2 = opacity 0.80 0.80,class:^(firefox)$
+#windowrulev2 = opacity 0.80 0.80,class:^(firefox)$
 windowrulev2 = opacity 0.70 0.70,class:^(Spotify)$
 windowrulev2 = opacity 0.80 0.80,class:^(discord)$
 windowrulev2 = opacity 0.80 .080,class:^(vesktop)$

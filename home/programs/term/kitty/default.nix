@@ -16,7 +16,7 @@
       foreground = "#c6d0f5";
       background = "#232634";
 
-      color0 = "#45475A";
+      color0 = "#727169";
       color1 = "#e78284";
       color2 = "#a6d189";
       color3 = "#ef9f76";

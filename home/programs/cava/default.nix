@@ -1,6 +1,6 @@
 { pkgs, lib, ... }:
 {
- # home.packages = [pkgs.cava];
+	# home.packages = [pkgs.cava];
   home.file.".config/cava/config".text = ''
   ## Configuration file for CAVA. Default values are commented out. Use either ';' or '#' for commenting.
 

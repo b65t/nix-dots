@@ -5,5 +5,7 @@
    ./pkgs
    ./neofetch
    ./cava
+   ./neovim
+   ./emacs
   ];
 }

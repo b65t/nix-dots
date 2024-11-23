@@ -25,7 +25,7 @@ home.packages = with pkgs;  [
  tree
  parted
  yazi
- neovim
+ #neovim
  vim
  alacritty
  # wayland
