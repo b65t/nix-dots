@@ -97,7 +97,7 @@ memory_display="off"
 battery_display="off"
 disk_display="off"
 
-image_backend="kitty"                                  # 'ascii', 'caca', 'chafa', 'jp2a', 'iterm2', 'off', 'pot', 'termpix', 'pixterm', 'tycat', 'w3m', 'kitty'
+image_backend="iterm2"                                  # 'ascii', 'caca', 'chafa', 'jp2a', 'iterm2', 'off', 'pot', 'termpix', 'pixterm', 'tycat', 'w3m', 'kitty'
 image_source="$HOME/.nix/home/programs/neofetch/cirno-nixos.png" # 'ascii', 'wallpaper', '/path/to/img', '/path/to/ascii', '/path/to/dir/' # with backend "kitty"
 
 #ascii_distro="nixos_small" # 'auto', for some: '{distro name}_old', '{distro name}_small', flavors of Ubuntu
@@ -107,7 +107,7 @@ image_source="$HOME/.nix/home/programs/neofetch/cirno-nixos.png" # 'ascii', 'wal
 thumbnail_dir="$HOME/.nix/home/programs/neofetch/"
 crop_mode="normal"   # 'normal', 'fit', 'fill'
 crop_offset="center" # 'northwest', 'north', 'northeast', 'west', 'center', 'east', 'southwest', 'south', 'southeast'
-image_size="12%"     # '00px', '00%'
+image_size="25%"     # '00px', '00%'
 gap=5               # gap between image and text
   '';
 }

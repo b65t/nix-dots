@@ -9,7 +9,7 @@ programs.waybar = {
 
        "layer" = "top";
        "position" = "top";
-       "margin" = "5";
+       "margin" = "0";
        "spacing" = "0";
         modules-left = [
           "custom/logo"
@@ -139,28 +139,37 @@ programs.waybar = {
 }
 
 window#waybar {
-    background-color: rgba(35, 38, 52, 0.3);
+    background-color: rgba(35, 38, 52, 0.0);
     transition-duration: .5s;
    /* border: 2px solid #303446; */
-    border-radius: 12px;
+    border-radius: 0px;
 ;
 }
 
  #workspaces {
    padding-right: 4px;
-  /* padding-left: 4px;
-   margin-right: 4px; */
+   padding-left: 4px;
+   margin-right: 4px;
    margin-bottom: 4px;
    margin-top: 4px;
    font-weight: Bold;
    border-radius: 10px;
    background: #303446 /*#292c3c*/;
+   border: 0px;
 }
 
  #workspaces button {
-    padding: 0 5px;
-    color: #c6d0f5;
-    border-radius: 12;
+    padding: 0px 1px;
+    color: #b8c0e0;
+    border-radius: 10px;
+    background-color: #b8c0e0;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-right: 3px;
+    margin-left: 3px;
+    font-size: 1px;
+    border: 0px;
+    min-height: 2px;
 } 
 
  #workspaces button.urgent {
@@ -168,7 +177,19 @@ window#waybar {
 }
 
  #workspaces button.active {
-    color: #ffffff;
+    color: #c6d0f5;
+    background-color: #c6d0f5;
+    border-radius: 12px;
+    padding-left: 10px;
+    padding-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 3px;
+    margin-right: 3px;
+    /*min-width: 20px;*/
+    min-height: 2px;
+    font-size: 1px;
+    border: 0px;
 } 
 
 #workspaces button:hover {

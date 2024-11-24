@@ -16,6 +16,7 @@ home.packages = with pkgs;  [
  # file
  xfce.thunar
  file-roller
+ gnome.nautilus
  # gaming
  lutris
  # term
@@ -28,6 +29,8 @@ home.packages = with pkgs;  [
  #neovim
  vim
  alacritty
+ w3m
+ imagemagick
  # wayland
  swww
  wofi
@@ -67,6 +70,7 @@ home.packages = with pkgs;  [
  gnumake
  gvfs
  git
+ afterglow-cursors-recolored
 ];
 
 }

@@ -13,7 +13,7 @@ monitor=,preferred,auto,1
 
 # MY PROGRAMS 
 
-$terminal = kitty
+$terminal = wezterm
 $fileManager = Files
 $menu = rofi -show drun
 
@@ -22,8 +22,7 @@ $menu = rofi -show drun
 # ENVIRONMENT VARIABLES
 
 env = XCURSOR_SIZE,24
-env = HYPRCURSOR_SIZE,24
-
+env = XCURSOR_THEME,Adwaita 24 
 
 # LOOK AND FEEL
 
@@ -33,10 +32,10 @@ general {
 
     border_size = 2
 
-    col.active_border = rgba(a5adceff) 
+    col.active_border = rgba(cdd6f4ff) rgba(b4befeff) 80deg
     col.inactive_border = rgba(595959aa)
 
-    resize_on_border = false 
+    resize_on_border = false
 
     allow_tearing = false
 
@@ -46,25 +45,24 @@ general {
 decoration {
     rounding = 8
 
-    active_opacity = 1.0
-    inactive_opacity = 1.0
+    active_opacity = 1
+    inactive_opacity = 1
 
 
     shadow {
-    enabled = true
-    range = 3
+    enabled = false
+    range = 30
     render_power = 2
-   # col.shadow = rgba(1a1a1aee)
+    color = rgba(babbf1ee)
+    color_inactive = 0xee
   }
     blur {
         enabled = true
-        size = 3
-        passes = 3
+        size = 6
+        passes = 2
 
-        new_optimizations = on
+        new_optimizations = no
         ignore_opacity = on
-
-        vibrancy = 0.1696
     }
 }
 
@@ -94,6 +92,8 @@ misc {
     force_default_wallpaper = -1 # Set to 0 or 1 to disable the anime mascot wallpapers
     disable_hyprland_logo = true # If true disables the random hyprland logo / anime girl background. :(
 }
+
+
 
 ### INPUT
 
