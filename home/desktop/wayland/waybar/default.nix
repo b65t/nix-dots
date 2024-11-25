@@ -11,6 +11,8 @@ programs.waybar = {
        "position" = "top";
        "margin" = "0";
        "spacing" = "0";
+       "ipc" = "true";
+       "exclusive" = "true";
         modules-left = [
           "custom/logo"
 	  "cpu"
@@ -46,15 +48,15 @@ programs.waybar = {
             "6" = [];
      };
         "format-icons" = {
-          "1" = "一";
-	  "2" = "二";
-	  "3" = "三";
-	  "4" = "四";
-	  "5" = "五";
-	  "6" = "六";
-	  "7" = "七";
-	  "8" = "八";
-	  "9" = "九";
+	    "1" = "一";
+	    "2" = "二";
+	    "3" = "三";
+	    "4" = "四";
+	    "5" = "五";
+	    "6" = "六";
+	    "7" = "七";
+	    "8" = "八";
+	    "9" = "九";
          };
 	};
 	"tray" = {
@@ -133,13 +135,14 @@ programs.waybar = {
    ];
 
     style = ''
+  @import '../../.cache/wal/colors-waybar.css';
  * {
     font-family:"JetBrainsMono nerd font"; 
     font-size: 14px;
 }
 
 window#waybar {
-    background-color: rgba(35, 38, 52, 0.0);
+    background-color: rgba(35, 35, 35, 0.0);
     transition-duration: .5s;
    /* border: 2px solid #303446; */
     border-radius: 0px;
@@ -154,15 +157,15 @@ window#waybar {
    margin-top: 4px;
    font-weight: Bold;
    border-radius: 10px;
-   background: #303446 /*#292c3c*/;
+   background: @background;
    border: 0px;
 }
 
  #workspaces button {
     padding: 0px 1px;
-    color: #b8c0e0;
+    color: @color1;
     border-radius: 10px;
-    background-color: #b8c0e0;
+    background-color: @color1;
     margin-top: 5px;
     margin-bottom: 5px;
     margin-right: 3px;
@@ -177,8 +180,8 @@ window#waybar {
 }
 
  #workspaces button.active {
-    color: #c6d0f5;
-    background-color: #c6d0f5;
+    color: @color1;
+    background-color: @color1;
     border-radius: 12px;
     padding-left: 10px;
     padding-right: 10px;
@@ -210,12 +213,12 @@ window#waybar {
     padding: 0 10px;
     padding-top: 3px;
     padding-bottom: 3px;
-    background: #303446 /*#292c3c*/;
+    background: @background;
+    color: @foreground;
 }
 
 #clock {
    /* background-color: #292c3c; */
-    color: #c6d0f5;
     border-radius: 0px 10px 10px 0px;
     margin-top: 4px;
     margin-bottom: 4px;
@@ -224,7 +227,6 @@ window#waybar {
 }
 
 #cpu {
-    color: #c6d0f5;
     font-weight: bold;
     border-radius: 0;
     margin-top: 4px;
@@ -232,7 +234,6 @@ window#waybar {
 }
 
 #memory {
-    color: #c6d0f5;
     font-weight: bold;
     border-radius: 0px 10px 10px 0px;
     margin-top: 4px;
@@ -242,7 +243,6 @@ window#waybar {
 #network {
 	 /* background-color: #292c3c; */
 	  border-radius: 10px 0px 0px 10px;
-	  color: #c6d0f5;
           margin-top: 4px;
           margin-bottom: 4px;
 } 
@@ -254,7 +254,6 @@ window#waybar {
 #pulseaudio {
    /* background-color: #292c3c; */
     border-radius: 0px 0px 0px 0px;
-    color: #c6d0f5;
     margin-top: 4px;
     margin-bottom: 4px;
     font-weight: bold;
@@ -286,7 +285,6 @@ window#waybar {
 
 #language {
    /* background-color: #292c3c; */
-    color: #c6d0f5;
     font-weight: bold;
     border-radius: 0px 0px 0px 0px;
     margin-top: 4px;
@@ -305,7 +303,6 @@ window#waybar {
 
 #custom-spotify {
     background-color: #292c3c;
-    color: #c0c0c0;
     font-weight: bold;
     border-radius: 12px;
     margin-top: 4px;
@@ -314,18 +311,16 @@ window#waybar {
 }
 
 #custom-logo {
-    color: #c6d0f5;
     font-weight: bold;
     border-radius: 10px 0px 0px 10px;
     margin-top: 4px; 
     margin-bottom: 4px;
    /* margin-right: 4px; */
     margin-left: 4px;
-    background: #303446 /*#292c3c*/;
+    background: @background;
 }
 
 #window {
-    color: #c6d0f5;
     font-weight: bold;
     background: #303446;
     border-radius: 0px 10px 10px 0px;

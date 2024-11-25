@@ -107,7 +107,7 @@ image_source="$HOME/.nix/home/programs/neofetch/cirno-nixos.png" # 'ascii', 'wal
 thumbnail_dir="$HOME/.nix/home/programs/neofetch/"
 crop_mode="normal"   # 'normal', 'fit', 'fill'
 crop_offset="center" # 'northwest', 'north', 'northeast', 'west', 'center', 'east', 'southwest', 'south', 'southeast'
-image_size="25%"     # '00px', '00%'
+image_size="15%"     # '00px', '00%'
 gap=5               # gap between image and text
   '';
 }

@@ -8,3 +8,9 @@ if [[ -z $CHOICE ]]; then
 fi
 
 ~/.nix/home/desktop/wayland/hyprland/swww.sh "$WALLPAPER"
+wal -n -i "$WALLPAPER"
+$HOME/.cache/wal/colors.sh
+
+pkill waybar
+waybar &
+

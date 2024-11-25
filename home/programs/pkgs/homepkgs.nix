@@ -38,6 +38,7 @@ home.packages = with pkgs;  [
  hyprland
  grim
  wlogout
+ pywal16
  # x11
  feh
  scrot
