@@ -1,7 +1,26 @@
-# nix-dots
+<div align="center">
+    <h1>Nix-dots</h1>
+</div>
 
-my NisOS dotfiles
+# what i use
 
-using flake
+- Flake
+- Hyprland, Hypridle, Hyprlock `window manager, lock screen`
+- Kitty `term`
+- Rofi `rofi-wayland`
+- Swaync `notifications`
+- Waybar `bar`
+- swww, Waypaper `background`
+- fastfetch `fetch`
+- neovim `text editor`
+- grim and slurp `screen shot`
+- nwg-look, Orchis-theme `GTK`
+- fish `shell`
 
-backup : https://gitlab.com/malsi65/nix-dots
+# other
+
+icons [papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) best icons pack fr
+pywal things [here](https://github.com/b65t/dotfiles/tree/main/.config/wal/templates)
+i use shyfox for the firefox [theme](https://github.com/Naezr/ShyFox)
+
+[Backgrounds](https://github.com/b65t/Background)
