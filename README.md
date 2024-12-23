@@ -19,8 +19,8 @@
 
 # other
 
-icons [papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) best icons pack fr
-pywal things [here](https://github.com/b65t/dotfiles/tree/main/.config/wal/templates)
-i use shyfox for the firefox [theme](https://github.com/Naezr/ShyFox)
+- icons [papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) best icons pack fr
+- pywal things [here](https://github.com/b65t/dotfiles/tree/main/.config/wal/templates)
+- i use shyfox for the firefox [theme](https://github.com/Naezr/ShyFox)
 
 [Backgrounds](https://github.com/b65t/Background)
