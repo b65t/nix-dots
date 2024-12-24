@@ -72,6 +72,7 @@ home.packages = with pkgs;  [
  playerctl
  libnotify
  wget
+ gcc
 ];
 
 }
