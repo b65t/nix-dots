@@ -12,7 +12,7 @@
 - Waybar `bar`
 - swww, Waypaper `background`
 - fastfetch `fetch`
-- neovim `text editor`
+- neovim, lazyvim `text editor`
 - grim and slurp `screen shot`
 - nwg-look, Orchis-theme `GTK`
 - fish `shell`
