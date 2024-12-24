@@ -57,7 +57,6 @@ home.packages = with pkgs;  [
  amberol
  gapless
  easytag
- firefox
  gh
  # system
  autoconf
