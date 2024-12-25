@@ -61,6 +61,9 @@ home.packages = with pkgs;  [
  gapless
  easytag
  gh
+ imv
+ wf-recorder
+ networkmanagerapplet
  # system
  autoconf
  automake
