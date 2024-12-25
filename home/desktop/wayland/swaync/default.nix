@@ -182,7 +182,7 @@ home.file.".config/swaync/style.css".text = ''
 
 .notification-row .notification-background .notification {
   /* The actual notification */
-  border-radius: 14px;
+  border-radius: 5px;
   border: 2px solid @color1;
   padding: 0;
   transition: background 0.15s ease-in-out;
@@ -218,7 +218,7 @@ home.file.".config/swaync/style.css".text = ''
 
 .notification-row .notification-background .notification .notification-default-action {
   /* The large action that also displays the notification summary and body */
-  border-radius: 12px;
+  border-radius: 5px;
 }
 
 .notification-row .notification-background .notification .notification-default-action:not(:only-child) {
@@ -229,7 +229,7 @@ home.file.".config/swaync/style.css".text = ''
 
 .notification-row .notification-background .notification .notification-default-action .notification-content {
   background: transparent;
-  border-radius: 12px;
+  border-radius: 5px;
   padding: 4px;
 }
 
@@ -285,7 +285,7 @@ home.file.".config/swaync/style.css".text = ''
   /* The "extra" optional bottom notification image */
   margin-top: 4px;
   background-color: white;
-  border-radius: 12px;
+  border-radius: 5px;
   -gtk-icon-effect: none;
 }
 
@@ -299,14 +299,14 @@ home.file.".config/swaync/style.css".text = ''
   color: @foreground;
   caret-color: @foreground;
   border: 2px solid @color1;
-  border-radius: 12px;
+  border-radius: 5px;
 }
 
 .notification-row .notification-background .notification .notification-default-action .notification-content .inline-reply .inline-reply-button {
   margin-left: 4px;
   background: @background;
   border: 2px solid @color1;
-  border-radius: 12px;
+  border-radius: 5px;
   color: @foreground;
 }
 
@@ -397,7 +397,7 @@ home.file.".config/swaync/style.css".text = ''
   /* The Control Center which contains the old notifications + widgets */
   background: @background;
   color: @foreground;
-  border-radius: 10px;
+  border-radius: 5px;
   border: 2px solid @color1;
 }
 
@@ -453,7 +453,7 @@ home.file.".config/swaync/style.css".text = ''
   background: @background;
   border: 2px solid @color1;
   box-shadow: none;
-  border-radius: 11px;
+  border-radius: 5px;
   padding: 5px;
 }
 
@@ -549,7 +549,7 @@ home.file.".config/swaync/style.css".text = ''
   font-size: 15px;
   padding: 8px;
   margin: 14px;
-  border-radius: 12px;
+  border-radius: 5px;
   background-color: @background;
   border: 2px solid @color1;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.75);
@@ -557,7 +557,7 @@ home.file.".config/swaync/style.css".text = ''
 
 .widget-buttons-grid > flowbox > flowboxchild > button {
   background: @color1;
-  border-radius: 12px;
+  border-radius: 7px;
   margin: 2px;
   padding: 5px;
   color: @background;
@@ -602,7 +602,7 @@ home.file.".config/swaync/style.css".text = ''
 /* Volume widget */
 
 trough {
-  border-radius: 20px;
+  border-radius: 5px;
   background: @background;
   border: 1px solid @background;
 }
@@ -610,19 +610,19 @@ trough {
 trough highlight {
   /* ´trough´ is the background of the slider, ´highlight´ is the actual slider */
   padding-top: 1px;
-  background: @color4;
-  border: 1px solid @color4;
-  border-radius: 20px;
+  background: @color1;
+  border: 1px solid @color1;
+  border-radius: 5px;
 }
 
 trough slider {
   padding: 1px;
-  background: @color4;
-  border: 1px solid @color4;
+  background: @color1;
+  border: 1px solid @color1;
 }
 trough slider:hover {
   padding: 1px;
-  background: @color4;
+  background: @color1;
 }
 
 .widget-volume {

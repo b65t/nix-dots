@@ -14,7 +14,7 @@ programs.spicetify =
        hidePodcasts
        shuffle # shuffle+ (special characters are sanitized out of extension names)
      ];
-     theme = spicePkgs.themes.catppuccin;
-     colorScheme = "mocha";
+     theme = spicePkgs.themes.text;
+     colorScheme = "CatppuccinMocha";
    };
 }

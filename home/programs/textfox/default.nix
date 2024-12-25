@@ -7,11 +7,11 @@ textfox = {
     profile = "default";
      config = {
         background = {
-          color = "#123456";
+          color = "#1e1e2e";
         };
         border = {
-          color = "#654321";
-          width = "2px";
+          color = "#cdd6f4";
+          width = "1px";
           transition = "1.0s ease";
           radius = "3px";
         };
@@ -21,7 +21,7 @@ textfox = {
         font = { 
           family = "JetBrainsMono Nerd Font";
           size = "15px";
-          accent = "#654321";
+          accent = "#cdd6f4";
         };
         sidebery = {
           margin = "0px";

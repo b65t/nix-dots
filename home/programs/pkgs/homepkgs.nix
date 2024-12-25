@@ -29,6 +29,7 @@ home.packages = with pkgs;  [
  tree
  parted
  yazi
+ btop
  #neovim
  vim
  alacritty
@@ -50,6 +51,8 @@ home.packages = with pkgs;  [
  hyprpicker
  hyprlock
  hypridle
+ hyprsunset
+ swaylock
  # apps
  obs-studio
  mpv

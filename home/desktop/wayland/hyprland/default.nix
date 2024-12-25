@@ -47,7 +47,7 @@ general {
 }
 
 decoration {
-    rounding = 7
+    rounding = 3
 
     active_opacity = 1
     inactive_opacity = 1
@@ -241,9 +241,9 @@ bind = $mainMod, print, exec, ~/.nix/scripts/partial-screenshot.sh
 #layerrule = blurpopups, rofi
 
 #windowrulev2 = opacity 0.80 0.80,class:^(firefox)$
-windowrulev2 = opacity 0.70 0.70,class:^(Spotify)$
-windowrulev2 = opacity 0.92 0.92,class:^(discord)$
-windowrulev2 = opacity 0.90 0.90,class:^(waypaper)$
+windowrulev2 = opacity 0.80 0.80,class:^(Spotify)$
+windowrulev2 = opacity 0.82 0.82,class:^(discord)$
+windowrulev2 = opacity 0.80 0.90,class:^(waypaper)$
 windowrulev2 = opacity 0.90 0.90,class:^(nemo)$   
  '';
  };

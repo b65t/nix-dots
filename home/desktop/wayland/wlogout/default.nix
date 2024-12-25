@@ -4,13 +4,7 @@
   programs.wlogout = {
     enable = true;
     layout = [
-      
-{
-    "label" = "logout";
-    "action" = "hyprctl dispatch exit 0";
-    "text" = "Logout";
-    "keybind" = "e";
-}
+
 
 {
     "label" = "shutdown";
@@ -18,12 +12,32 @@
     "text" = "Shutdown";
     "keybind" = "s";
 }
-
+{
+    "label" = "lock";
+    "action" = "hyprlock";
+    "keybind" = "l";
+}
 {
     "label" = "reboot";
     "action" = "systemctl reboot";
     "text" = "Reboot";
     "keybind" = "r";
+}
+{
+    "label" = "sleep";
+    "action" = "systemctl suspend";
+    "keybind" = "h";
+}
+{
+    "label" = "logout";
+    "action" = "hyprctl dispatch exit 0";
+    "text" = "Logout";
+    "keybind" = "e";
+}
+{
+    "label" = "hibernate";
+    "action" = "swaylock -f";
+    "keybind" = "l";
 }
     ];
     style = ''

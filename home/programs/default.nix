@@ -9,5 +9,6 @@
    ./spicetify
    ./nixcord
    ./textfox
+   ./vscodium
   ];
 }

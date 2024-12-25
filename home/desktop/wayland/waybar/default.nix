@@ -216,7 +216,8 @@ programs.waybar = {
 window#waybar {
     background-color: @background;
     transition-duration: .5s;
-    border-radius: 10px;
+    border-radius: 5px;
+    border: 2px solid @color1;
 }
 
 #workspaces {
