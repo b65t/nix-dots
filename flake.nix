@@ -23,6 +23,9 @@
      textfox = {
         url = "github:adriankarlen/textfox";
     };
+     catppuccin = {
+        url = "github:catppuccin/nix";
+    };
    };
 
    outputs =
@@ -68,6 +71,7 @@
     inputs.spicetify-nix.homeManagerModules.default
     inputs.nixcord.homeManagerModules.nixcord
     inputs.textfox.homeManagerModules.default
+    inputs.catppuccin.homeManagerModules.catppuccin
     ];
    };
   };
