@@ -12,6 +12,7 @@
           ms-vscode.cpptools
           catppuccin.catppuccin-vsc
           catppuccin.catppuccin-vsc-icons
+          vscodevim.vim
         ];
   userSettings = {
           "update.mode" = "none";
@@ -22,6 +23,8 @@
           "window.menuBarVisibility" = "toggle";
           "workbench.colorTheme" = "Catppuccin Mocha";
           "workbench.iconTheme" = "catppuccin-mocha";
+          "editor.minimap.enabled" = false;
+          "vsicons.dontShowNewVersionMessage" = true;
          };
  };
 }

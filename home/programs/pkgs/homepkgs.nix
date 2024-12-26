@@ -15,7 +15,13 @@ home.packages = with pkgs;  [
  orchis-theme
  nwg-look
  gtk3
+ gtk4
+ gtkmm3
+ gtkmm4
+ gtkmm2
  eza
+ catppuccin-gtk
+ papirus-icon-theme
  # file
  file-roller
  nemo
@@ -26,6 +32,7 @@ home.packages = with pkgs;  [
  fastfetch
  neofetch
  nitch
+ microfetch
  tree
  parted
  yazi
@@ -64,6 +71,8 @@ home.packages = with pkgs;  [
  imv
  wf-recorder
  networkmanagerapplet
+ gpu-screen-recorder
+ gpu-screen-recorder-gtk
  # system
  autoconf
  automake
