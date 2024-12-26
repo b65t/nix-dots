@@ -12,7 +12,6 @@ home.packages = with pkgs;  [
 # add user pkgs here
  # common
  rofi-wayland
- orchis-theme
  nwg-look
  gtk3
  gtk4
@@ -22,6 +21,9 @@ home.packages = with pkgs;  [
  eza
  catppuccin-gtk
  papirus-icon-theme
+ sassc
+ gtk-engine-murrine
+ gnome-themes-extra
  # file
  file-roller
  nemo

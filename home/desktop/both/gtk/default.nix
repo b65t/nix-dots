@@ -1,19 +1,16 @@
-{ pkgs, lib, ... }:
+{ pkgs, lib, inputs, ... }:
 
 {
-
 gtk = {
-   # enable = true;
+    enable = true;
     iconTheme = {
       name = "Papirus-Dark";
-      package = pkgs.papirus-icon-theme;
     };
     theme = {
-      name = "catppuccin-Dark";
-      variant = "mocha";
-      accents = [ "blue" ];
-      size = "standard";
-      package =  pkgs.catppuccin-gtk;
+      name = "catppuccin-mocha-blue-standard+default";
+    };
+    cursorTheme = {
+      name = "Furina 2.0";
     };
       gtk3.extraConfig = {
       gtk-application-prefer-dark-theme = 1;
