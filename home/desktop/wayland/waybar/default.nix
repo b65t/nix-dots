@@ -231,7 +231,8 @@ window#waybar {
 
 #workspaces button {
    color: @color2;
-   padding: 0px;
+   padding-right: 1px;
+   padding-left: 1px;
    font-weight: bold;
 }
 

@@ -17,7 +17,7 @@
   userSettings = {
           "update.mode" = "none";
           "extensions.autoUpdate" = false;
-          "window.titleBarStyle" = "custom";
+          "window.titleBarStyle" = "native";
           "editor.fontFamily" = "'JetBrainsMono Nerd Font', 'SymbolsNerdFont', 'monospace', monospace";
           "terminal.integrated.fontFamily" = "'Hack Nerd Font'";
           "window.menuBarVisibility" = "toggle";

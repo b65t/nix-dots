@@ -41,7 +41,6 @@ home.packages = with pkgs;  [
  btop
  #neovim
  vim
- alacritty
  w3m
  imagemagick
  neovim
