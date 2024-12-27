@@ -38,22 +38,20 @@
      let
        lib = nixpkgs.lib;
        system = "x86_64-linux";
-       hostname = "islamflake";
-       username = "islam";
        pkgs = import nixpkgs {
           inherit system;
 	     config.allowUnfree = true;	
   };
      in {
         nixosConfigurations = {
-          nixos = nixpkgs.lib.nixosSystem {
-	  specialArgs = {
+          flake = nixpkgs.lib.nixosSystem {
+	        specialArgs = {
             inherit system;
-            inherit username;
-            inherit hostname;
             inherit inputs;
 	};
-            modules = [ ./NixOS/configuration.nix ];
+            modules = [
+            ./hosts/main/configuration.nix 
+            ];
       };
     };
     homeConfigurations = {
@@ -61,8 +59,6 @@
     pkgs = pkgs;
     extraSpecialArgs = {
      inherit pkgs;
-     inherit username;
-     inherit hostname;
      inherit system;
      inherit inputs;
     };
