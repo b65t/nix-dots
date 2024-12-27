@@ -150,7 +150,7 @@ programs.waybar = {
     ];
   };
     "custom/playerctl-backward" = {
-        "format" = "";
+        "format" = "";
         "tooltip" = false;
         "on-click" = "playerctl previous";
         "on-scroll-up" = "playerctl volume .05+";
@@ -170,7 +170,7 @@ programs.waybar = {
         };
     };
     "custom/playerctl-forward" = {
-        "format" = "";
+        "format" = "";
         "tooltip" = false;
         "on-click" = "playerctl next";
         "on-scroll-up" = "playerctl volume .05+";
@@ -216,7 +216,7 @@ programs.waybar = {
 window#waybar {
     background-color: @background;
     transition-duration: .5s;
-    border-radius: 5px;
+    border-radius: 7px;
     border: 2px solid @color1;
 }
 
@@ -224,9 +224,8 @@ window#waybar {
   /* padding-right: 4px;
    padding-left: 4px; */
    font-weight: bold;
-   background: @background;
-   margin-top: 2px;
-   margin-bottom: 2px;
+   margin-top: 0px;
+   margin-bottom: 0px;
 }
 
 #workspaces button {
@@ -244,7 +243,6 @@ window#waybar {
 #workspaces button.active {
    /* background: @color1;  */
    color: @color1;
-   border-radius: 0px;
    font-weight: bold;
 }
 
@@ -265,15 +263,10 @@ window#waybar {
    padding: 0 10px;
    padding-top: 0px;
    padding-bottom: 0px;
-   /* background: @foreground; */
-    color: @foreground;
-    margin-top: 2px;
-    margin-bottom: 2px;
+   color: @foreground;
 }
 
 #clock {
-    background-color: @background;
-    border-radius: 0px;
    /* margin-top: 4px;
     margin-bottom: 4px; */
     font-weight: bold;
@@ -297,8 +290,6 @@ window#waybar {
 
 #network {
 	  color: @color1;
-	  background-color: @background;
-	  border-radius: 0px;
          /* margin-top: 4px;
           margin-bottom: 4px; */
           font-size: 14px;
@@ -310,10 +301,6 @@ window#waybar {
 
 #pulseaudio {
     color: @color1;
-    background-color: @background;
-    border-radius: 0px 0px 0px 0px;
-   /* margin-top: 4px;
-    margin-bottom: 4px; */
     font-weight: bold;
     font-size: 14px;
 }
@@ -323,10 +310,7 @@ window#waybar {
 }
 
 #tray {
-   background-color: @background;
    border-radius: 0px;
-   margin-bottom: 2px;
-   margin-top: 2px;
    padding: 0px 10px;
    padding-top: 3px;
    padding-bottom: 3px;
@@ -342,9 +326,7 @@ window#waybar {
 }
 
 #language {
-    background-color: @background; 
     font-weight: bold;
-    border-radius: 0px 0px 0px 0px;
    /* margin-top: 4px;
     margin-right: 4px;
     margin-bottom: 4px; */
@@ -371,20 +353,12 @@ window#waybar {
 #custom-logo {
     color: @color1;
     font-weight: bold;
-   /* border-radius: 0px; */
     margin-left: 2px; 
-   /* margin-top: 4px; 
-    margin-bottom: 4px; */
-    background: @background;
-    border-radius: 10px 0px 0px 10px;
     font-size: 18px;
 }
 
 #window {
     font-weight: bold;
-    margin-top: 2px;
-    margin-bottom: 2px;
-    background: @background;
     color: @foreground;
 }
 
@@ -398,17 +372,12 @@ window#waybar {
 }
 
 #custom-separator {
-	background: @background;
-	margin-top: 2px;
-	margin-bottom: 2px;
 	color: #49464f;
 }
 
 #custom-notification {
 	color: @color1;
 	margin-right: 4px;
-	background: @background;
-	border-radius: 0px 10px 10px 0px;
 	font-size: 14px;
 }
 

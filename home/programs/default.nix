@@ -5,7 +5,7 @@
    ./pkgs
    ./neofetch
    ./fastfetch
- #  ./cava
+   ./cava
    ./spicetify
    ./nixcord
    ./textfox

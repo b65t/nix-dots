@@ -39,6 +39,7 @@ home.packages = with pkgs;  [
  parted
  yazi
  btop
+ calcurse
  #neovim
  vim
  w3m
