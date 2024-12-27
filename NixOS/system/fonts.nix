@@ -4,7 +4,11 @@
 
 fonts.packages = with pkgs; [
 
-  nerdfonts
+  nerd-fonts.symbols-only
+  nerd-fonts.hack
+  nerd-fonts.noto
+  nerd-fonts.jetbrains-mono
+  nerd-fonts._0xproto
 
 ];
 
