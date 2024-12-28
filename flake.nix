@@ -19,12 +19,15 @@
      nixcord = {
         url = "github:kaylorben/nixcord";
     };
-
-     textfox = {
-        url = "github:adriankarlen/textfox";
-    };
      catppuccin = {
         url = "github:catppuccin/nix";
+    };
+     ghostty = {
+      url = "github:ghostty-org/ghostty";
+    };
+     nur = {
+      url = "github:nix-community/NUR";
+      inputs.nixpkgs.follows = "nixpkgs";
     };
    };
 
@@ -33,6 +36,7 @@
       self,
       nixpkgs,
       home-manager,
+      ghostty,
       ...
        }:
      let
@@ -40,7 +44,8 @@
        system = "x86_64-linux";
        pkgs = import nixpkgs {
           inherit system;
-	     config.allowUnfree = true;	
+	     config.allowUnfree = true;
+       overlays = [ inputs.nur.overlays.default ];
   };
      in {
         nixosConfigurations = {
@@ -66,7 +71,6 @@
     ./home/home.nix
     inputs.spicetify-nix.homeManagerModules.default
     inputs.nixcord.homeManagerModules.nixcord
-    inputs.textfox.homeManagerModules.default
     inputs.catppuccin.homeManagerModules.catppuccin
     ];
    };
