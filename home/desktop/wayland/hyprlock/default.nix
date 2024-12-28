@@ -82,7 +82,7 @@ label {
 
 image {
     monitor =
-    path = /home/islam/Documents/profile/pp.jpg
+    path = /home/islam/.nix/images/profile/pp1.jpg
     size = 120
     rounding = -1
     border_size = 0

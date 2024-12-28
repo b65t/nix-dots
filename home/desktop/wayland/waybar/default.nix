@@ -403,7 +403,7 @@ window#waybar {
 }
 
 #custom-weather {
-	color: @color1;
+	color: @foreground;
 	font-weight: bold;
 }
 
