@@ -21,6 +21,4 @@
 - icons [papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) best icons pack fr
 - gtk theme [here](https://github.com/catppuccin/gtk/releases/download/v1.0.3/catppuccin-mocha-blue-standard+default.zip)
 - cursor [here](https://www.pling.com/p/2163668)
-- pywal things [here](https://github.com/b65t/dotfiles/tree/main/.config/wal/templates)
-- i use textfox for the firefox [theme](https://github.com/Naezr/ShyFox)
 - [Backgrounds](https://github.com/b65t/Background)
