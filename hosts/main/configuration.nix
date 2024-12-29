@@ -51,15 +51,15 @@
 
    services.xserver.enable = true;
 
-   services.xserver.displayManager.sddm.enable = true;
+   services.displayManager.sddm.enable = true;
   # services.xserver.desktopManager.gnome.enable = true;
    
    services.flatpak.enable = true;
 
   # Configure keymap in X11
-  services.xserver.layout = "us,ara";
-  services.xserver.xkbVariant = "";
-  services.xserver.xkbOptions = "grp:win_space_toggle";
+  services.xserver.xkb.layout = "us,ara";
+  services.xserver.xkb.variant = "";
+  services.xserver.xkb.options = "grp:win_space_toggle";
 
   # Enable CUPS to print documents.
   # services.printing.enable = true;

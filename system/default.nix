@@ -6,5 +6,6 @@
       ./pkgs
       ./fonts
       ./zram
+      ./su
   ];
 }
