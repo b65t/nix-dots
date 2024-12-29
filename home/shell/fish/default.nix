@@ -8,22 +8,22 @@
 	set fish_greeting
 end
 
-function fish_prompt
-     set_color blue
-        printf "-[%s]" (prompt_pwd)
-        echo ' 
- '
-end
+    '';
 
-    alias ls="eza --icons"
-    alias tree="eza --icons --tree"
-    alias cl="clear"
-    alias nv="nvim"
-    alias nxr="sudo nixos-rebuild switch --flake ."
-    alias hmr="home-manager switch --flake ."
-    alias fm="yazi"
-    alias nxcg="sudo nix-collect-garbage -d"
-    alias nfu="nix flake update"
-    ''; 
+    shellAliases = {
+      l = "eza -lh --icons";
+      ls = "eza --icons";
+      la = "eza -a --icons";
+      ll = "eza -i --icons";
+      tree = "eza --tree --icons";
+      cl = "clear";
+      nv = "nvim";
+      nxr = "sudo nixos-rebuild switch --flake .";
+      hmr = "home-manager switch --flake .";
+      fm = "yazi";
+      nxcg = "sudo nix-collect-garbage -d";
+      nfu = "nix flake update";
+      nxso = "nix-store --optimise";
+    };
  };
 }

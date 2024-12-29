@@ -57,7 +57,8 @@ programs.waybar = {
 	    "8" = [];
      };
         "format-icons" = {
-	    "active" = "󱨇";
+      "empty" = "";
+	    "active" = "";
 	    "default" = "";
          };
 	};
@@ -84,10 +85,10 @@ programs.waybar = {
       };
        "pulseaudio" = {
           "scroll-step" = 1;
-          "format" = "{icon}";
+          "format" = "{icon} {volume}";
           "format-muted" = "󰖁 Muted";
           "format-icons" = {
-            "default" = [ "" "" "" ];
+            "default" = [ "󰋋" ];
           };
 	   "tooltip" = false;
 	   "on-click" = "pavucontrol";
@@ -390,7 +391,7 @@ window#waybar {
 #custom-playerctl-forward,
 #custom-playerctl-play,
 #custom-playerctl-backward {
-	padding: 0 5px;
+	padding: 0 3px;
 }
 
 #custom-playerctl-forward,

@@ -24,6 +24,10 @@ clipboard-paste-protection = false
 copy-on-select = false
 
 gtk-titlebar = false
+gtk-adwaita = true
+gtk-single-instance = true
+quit-after-last-window-closed = false
+window-decoration = false
 
 cursor-style = underline
 cursor-style-blink = true

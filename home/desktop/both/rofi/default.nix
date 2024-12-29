@@ -9,7 +9,7 @@
     extraConfig = {
         modi = "drun,filebrowser,run";
         drun-display-format = "{icon} {name}";
-        display-drun = " drun";
+        display-drun = " apps";
         display-run = " Run";
         display-filebrowser = " File";
       };
