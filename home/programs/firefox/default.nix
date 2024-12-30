@@ -10,6 +10,10 @@
             default = "DuckDuckGo";
             order = [ "DuckDuckGo" "Google" ];
       };
+
+       settings = {
+            "browser.startup.homepage" = "https://b65t.github.io/startpage/";
+       };
       # i used betterfox here
       extraConfig = ''
 user_pref("content.notify.interval", 100000);
@@ -137,6 +141,7 @@ user_pref("layout.word_select.eat_space_to_next_word", false);
         extensions = with pkgs.nur.repos.rycee.firefox-addons; [
          ublock-origin
          vimium
+         new-tab-override
       ];
  };
 };
