@@ -6,7 +6,7 @@
 
 - Flake
 - Hyprland, Hypridle, Hyprlock `window manager, lock screen`
-- Ghostty `term`
+- Kitty `term`
 - Rofi `rofi-wayland`
 - Swaync `notifications`
 - Waybar `bar`
