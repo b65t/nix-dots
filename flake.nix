@@ -22,9 +22,6 @@
      catppuccin = {
         url = "github:catppuccin/nix";
     };
-     ghostty = {
-      url = "github:ghostty-org/ghostty";
-    };
      nur = {
       url = "github:nix-community/NUR";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -36,7 +33,6 @@
       self,
       nixpkgs,
       home-manager,
-      ghostty,
       ...
        }:
      let
