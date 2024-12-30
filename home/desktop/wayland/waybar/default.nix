@@ -15,26 +15,21 @@ programs.waybar = {
        "exclusive" = "true";
         modules-left = [
           "custom/logo"
-	  "custom/separator"
-	  "group/music_controller"
-	  "custom/separator"
-	  "custom/picker"
+	        "custom/picker"
           "custom/screen-shot"
           "custom/weather"
+          "group/music_controller"
+          "tray"
 	  ];
 	  modules-center = [
 	  "hyprland/workspaces"
-    "custom/separator"
-    "custom/cava"
         ];
 	  modules-right = [
+  "custom/cava"
 	"network"
 	"pulseaudio"
 	"hyprland/language"
-	"custom/separator"
 	"clock"
-	"tray"
-	"custom/separator"
 	"custom/notification"
        ];
 	  "hyprland/window" = {
@@ -54,12 +49,11 @@ programs.waybar = {
             "5" = [];
             "6" = [];
 	    "7" = [];
-	    "8" = [];
      };
         "format-icons" = {
-      "empty" = "";
-	    "active" = "";
-	    "default" = "";
+      "empty" = " ";
+	    "active" = " ";
+	    "default" = " ";
          };
 	};
 	"tray" = {
@@ -153,7 +147,7 @@ programs.waybar = {
     ];
   };
     "custom/playerctl-backward" = {
-        "format" = "";
+        "format" = " ";
         "tooltip" = false;
         "on-click" = "playerctl previous";
         "on-scroll-up" = "playerctl volume .05+";
@@ -173,7 +167,7 @@ programs.waybar = {
         };
     };
     "custom/playerctl-forward" = {
-        "format" = "";
+        "format" = " ";
         "tooltip" = false;
         "on-click" = "playerctl next";
         "on-scroll-up" = "playerctl volume .05+";
@@ -221,28 +215,34 @@ programs.waybar = {
 }
 
 window#waybar {
-    background-color: @background;
+    background-color: transparent;
     transition-duration: .5s;
     border-radius: 7px;
-    border: 2px solid @color1;
+   /* border: 2px solid @color1; */
 }
 
 #workspaces {
   /* padding-right: 4px;
    padding-left: 4px; */
    font-weight: bold;
-   margin-top: 0px;
-   margin-bottom: 0px;
+   min-height: 0px;
+   padding: 2px 15px 2px 15px;
+   background-color: @background;
+   border-radius: 10px;
 }
 
 #workspaces button {
    color: @color2;
-   padding-right: 1px;
-   padding-left: 1px;
+   background: @color1;
+   border-radius: 5px;
    font-weight: bold;
+   min-width: 0px;
+   padding: 0px 8px 0px 8px;
+   margin: 2px;
 }
 
 #workspaces button.empty {
+   background-color: @foreground;
    color: @foreground;
    font-weight: bold;
 }
@@ -250,6 +250,9 @@ window#waybar {
 #workspaces button.active {
    /* background: @color1;  */
    color: @color1;
+   background: linear-gradient(@color1,@color2);
+   padding-right: 23px;
+   padding-left: 20px;
    font-weight: bold;
 }
 
@@ -277,6 +280,8 @@ window#waybar {
    /* margin-top: 4px;
     margin-bottom: 4px; */
     font-weight: bold;
+    background-color:@background;
+    border-radius: 0px 10px 10px 0px
 }
 
 #cpu {
@@ -297,9 +302,11 @@ window#waybar {
 
 #network {
 	  color: @color1;
-         /* margin-top: 4px;
-          margin-bottom: 4px; */
-          font-size: 14px;
+    /* margin-top: 4px;
+    margin-bottom: 4px; */
+    font-size: 14px;
+    background-color: @background;
+    border-radius: 10px 0px 0px 10px;
 } 
 
  #network.disconnected {
@@ -310,6 +317,7 @@ window#waybar {
     color: @color1;
     font-weight: bold;
     font-size: 14px;
+    background-color: @background;
 }
 
 #pulseaudio.muted {
@@ -317,7 +325,6 @@ window#waybar {
 }
 
 #tray {
-   border-radius: 0px;
    padding: 0px 10px;
    padding-top: 3px;
    padding-bottom: 3px;
@@ -337,6 +344,7 @@ window#waybar {
    /* margin-top: 4px;
     margin-right: 4px;
     margin-bottom: 4px; */
+    background-color: @background;
 }
 
 #custom-power {
@@ -358,7 +366,9 @@ window#waybar {
 }
 
 #custom-logo {
-    color: @color1;
+   background: linear-gradient(45deg, @color1,@color2);
+    border-radius: 10px 10px 4px 10px;
+    color: @foreground;
     font-weight: bold;
     margin-left: 2px; 
     font-size: 18px;
@@ -370,22 +380,33 @@ window#waybar {
 }
 
 #custom-cava {
-   color: @color1;
+   color: @foreground;
+   background: linear-gradient(45deg, @color1,@color2);
    min-height: 0px;
+   border-radius: 10px;
+   margin-right: 5px;
+   font-family: Hack Nerd font;
 }
 
 #custom-separator {
 	color: #49464f;
+  background-color: @background;
 }
 
 #custom-notification {
-	color: @color1;
+	color: @foreground;
 	margin-right: 4px;
 	font-size: 14px;
+  background: linear-gradient(45deg, @color1,@color2);
+  margin-left: 5px;
+  border-radius: 10px 10px 10px 4px;
 }
 
 #custom-picker {
         color: @color1;
+        background-color: @background;
+        border-radius: 10px 0px 0px 10px;
+        margin-left: 5px;
 }
 
 #custom-playerctl-forward,
@@ -398,18 +419,30 @@ window#waybar {
 #custom-playerctl-backward {
 	color: @color1;
 }
-
 #custom-playerctl-play {
+  background: @background;
 	color: @foreground;
+}
+#custom-playerctl-backward {
+  background: @background;
+  border-radius: 10px 0px 0px 10px;
+  margin-left: 5px;
+}
+#custom-playerctl-forward {
+  background: @background;
+  border-radius: 0px 10px 10px 0px;
 }
 
 #custom-weather {
 	color: @foreground;
 	font-weight: bold;
+  background-color: @background;
+  border-radius: 0px 10px 10px 0px;
 }
 
 #custom-screen-shot {
 	color: @color1;
+  background-color: @background;
 }
    '';
    };

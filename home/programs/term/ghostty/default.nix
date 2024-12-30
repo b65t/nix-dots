@@ -4,7 +4,7 @@
 
 home.packages = [
 inputs.ghostty.packages."${pkgs.system}".default
-]; 
+];
 
 home.file.".config/ghostty/config".text = ''
 config-file = /home/islam/.cache/wal/colors-ghostty

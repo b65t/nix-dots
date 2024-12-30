@@ -14,7 +14,7 @@ monitor=,preferred,auto,1
 
 # MY PROGRAMS 
 
-$terminal = ghostty
+$terminal = kitty
 $fileManager = nemo
 $menu = rofi -show drun
 $browser = firefox
