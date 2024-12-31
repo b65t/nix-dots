@@ -6,16 +6,21 @@ home.file.".config/fastfetch/config.jsonc".text = ''
 {
 	"logo": {
 	 "type": "kitty",
-   "source": "~/.nix/images/fetch/cirno-nixos.png",
-	 "width": 17,
-   "height": 9
+   "source": "~/.nix/images/fetch/fetch1.png",
+	 "width": 20,
+   "height": 10
 	},
 	"display": {
-        "separator": " -> "
+        "separator": " ~ "
 },
         "modules": [
         "break",
-        "title",
+     {
+            "key": "",
+            "type": "title",
+            "format": "{user-name}@{host-name}",
+            "keyColor": "blue"
+     },
 	   {
             "type": "os",
             "key": "",
@@ -49,7 +54,8 @@ home.file.".config/fastfetch/config.jsonc".text = ''
         },
         {
             "type": "custom",
-            "format": "  \u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m "
+            "key": "",
+            "format": "\u001b[90m  \u001b[31m  \u001b[32m  \u001b[33m  \u001b[34m  \u001b[35m  \u001b[36m  \u001b[37m "
         }
     ]
 }
