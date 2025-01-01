@@ -19,6 +19,7 @@ programs.waybar = {
           "custom/screen-shot"
           "custom/weather"
           "group/music_controller"
+	  "hyprland/window"
           "tray"
 	  ];
 	  modules-center = [
@@ -32,10 +33,6 @@ programs.waybar = {
 	"clock"
 	"custom/notification"
        ];
-	  "hyprland/window" = {
-        #  "max-length" = 25;
-      #    "separate-outputs" = false;
-        };
 
     "hyprland/workspaces" = {
         "disable-scroll" = false;
@@ -87,14 +84,6 @@ programs.waybar = {
 	   "tooltip" = false;
 	   "on-click" = "pavucontrol";
 	 };
-
-     "hyprland/window" = {
-       "format" = " {} ";
-       "max-length" = 30;
-       "separate-outputs" = true;
-       "offscreen-css" = true;
-       "offscreen-css-text" = "(inactive)";
-      };
 
       "custom/spotify" = {
         "interval" = 1;
@@ -202,6 +191,20 @@ programs.waybar = {
     "custom/cava" = {
       "exec" = "~/.nix/scripts/waybar/cava.sh";
       "format" = "{}";
+    };
+    "hyprland/window" = {
+     #  "format" = "{}";
+     "format" = "{initialTitle}";
+        "rewrite" = {
+	 "(.*)kitty" = "󰄛 kitty";
+         "(.*)Mozilla Firefox" = "󰈹 Firefox";
+	 "(.*)Discord" = " Discord";
+	 "(.*)Spotify" = "󰓇 Spotify";
+	 "(.*)Waypaper" = " Waypaper";
+	 "(.*)VSCodium" = " VSCodium";
+	 "" = " Desktop";
+     };
+      "separate-outputs" = true;
     };
      }
    ];
@@ -366,17 +369,21 @@ window#waybar {
 }
 
 #custom-logo {
-   background: linear-gradient(45deg, @color1,@color2);
-    border-radius: 10px 10px 4px 10px;
+   background: linear-gradient(120deg, @color1,@color2);
+    border-radius: 11px 11px 6px 11px;
     color: @foreground;
     font-weight: bold;
-    margin-left: 2px; 
     font-size: 18px;
 }
 
 #window {
     font-weight: bold;
     color: @foreground;
+    background: @background;
+    margin-left: 5px;
+    padding-right: 5px;
+    padding-left: 5px;
+    border-radius: 10px;
 }
 
 #custom-cava {
@@ -395,11 +402,10 @@ window#waybar {
 
 #custom-notification {
 	color: @foreground;
-	margin-right: 4px;
 	font-size: 14px;
-  background: linear-gradient(45deg, @color1,@color2);
+  background: linear-gradient(200deg, @color1,@color2);
   margin-left: 5px;
-  border-radius: 10px 10px 10px 4px;
+  border-radius: 11px 11px 11px 6px;
 }
 
 #custom-picker {
