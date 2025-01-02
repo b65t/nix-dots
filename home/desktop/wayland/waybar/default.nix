@@ -20,13 +20,13 @@ programs.waybar = {
           "custom/weather"
           "group/music_controller"
 	  "hyprland/window"
-          "tray"
 	  ];
 	  modules-center = [
 	  "hyprland/workspaces"
         ];
 	  modules-right = [
-  "custom/cava"
+        "custom/cava"
+        "tray"
 	"network"
 	"pulseaudio"
 	"hyprland/language"
@@ -237,7 +237,7 @@ window#waybar {
 #workspaces button {
    color: @color2;
    background: @color1;
-   border-radius: 5px;
+   border-radius: 10px;
    font-weight: bold;
    min-width: 0px;
    padding: 0px 8px 0px 8px;
@@ -253,7 +253,7 @@ window#waybar {
 #workspaces button.active {
    /* background: @color1;  */
    color: @color1;
-   background: linear-gradient(@color1,@color2);
+   background: linear-gradient(50deg, @color1,@color2,@color1,@color2,@color1);
    padding-right: 23px;
    padding-left: 20px;
    font-weight: bold;
@@ -331,6 +331,9 @@ window#waybar {
    padding: 0px 10px;
    padding-top: 3px;
    padding-bottom: 3px;
+   background: @background;
+   border-radius: 10px;
+   margin-right: 5px;
 }
 
 #tray > .passive {
@@ -369,7 +372,7 @@ window#waybar {
 }
 
 #custom-logo {
-   background: linear-gradient(120deg, @color1,@color2);
+   background: linear-gradient(120deg, @color1,@color2,@color1);
     border-radius: 11px 11px 6px 11px;
     color: @foreground;
     font-weight: bold;
@@ -381,14 +384,14 @@ window#waybar {
     color: @foreground;
     background: @background;
     margin-left: 5px;
-    padding-right: 5px;
-    padding-left: 5px;
+    padding-right: 7px;
+    padding-left: 7px;
     border-radius: 10px;
 }
 
 #custom-cava {
    color: @foreground;
-   background: linear-gradient(45deg, @color1,@color2);
+   background: linear-gradient(45deg, @color1,@color2,@color1);
    min-height: 0px;
    border-radius: 10px;
    margin-right: 5px;
@@ -403,7 +406,7 @@ window#waybar {
 #custom-notification {
 	color: @foreground;
 	font-size: 14px;
-  background: linear-gradient(200deg, @color1,@color2);
+  background: linear-gradient(200deg, @color1,@color2,@color1);
   margin-left: 5px;
   border-radius: 11px 11px 11px 6px;
 }

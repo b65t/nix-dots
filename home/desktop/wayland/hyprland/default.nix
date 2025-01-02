@@ -36,7 +36,7 @@ general {
 
     border_size = 2
 
-    col.active_border = $color1 $color2 80deg
+    col.active_border = $color1
     col.inactive_border = rgba(595959aa)
 
     resize_on_border = false
@@ -47,7 +47,7 @@ general {
 }
 
 decoration {
-    rounding = 3
+    rounding = 10
 
     active_opacity = 1
     inactive_opacity = 1
@@ -55,7 +55,7 @@ decoration {
 
     shadow {
         enabled = true
-        range = 7
+        range = 4
         render_power = 0
         #scale = 0.999
         color = $backgroundCol

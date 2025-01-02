@@ -19,6 +19,7 @@ wf-recorder
 networkmanagerapplet
 gpu-screen-recorder
 gpu-screen-recorder-gtk
+ffmpeg
 
 ];
 
