@@ -13,6 +13,7 @@
    pavucontrol
    git
    home-manager
+   procps
 
    ];
 
