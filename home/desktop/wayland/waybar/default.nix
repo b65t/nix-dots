@@ -238,11 +238,14 @@ window#waybar {
 #workspaces button {
    color: @color2;
    background: @color1;
-   border-radius: 10px;
+   border-radius: 8px;
    font-weight: bold;
    min-width: 0px;
    padding: 0px 8px 0px 8px;
-   margin: 2px;
+   margin-top: 2px;
+   margin-bottom: 2px;
+   margin-right: 3px;
+   margin-left: 3px;
 }
 
 #workspaces button.empty {

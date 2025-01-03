@@ -24,6 +24,7 @@ home.packages = with pkgs;  [
  w3m
  imagemagick
  neovim
+ nur.repos.Ex-32.pokemon-colorscripts
 
 ];
 

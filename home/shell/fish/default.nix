@@ -6,6 +6,7 @@
     interactiveShellInit = ''
     if status is-interactive
 	set fish_greeting
+	pokemon-colorscripts -r
 end
 
     '';
