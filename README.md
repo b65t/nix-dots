@@ -19,6 +19,6 @@
 # other
 
 - icons [papirus](https://github.com/PapirusDevelopmentTeam/papirus-icon-theme) best icons pack fr
-- gtk theme [here](https://github.com/catppuccin/gtk/releases/download/v1.0.3/catppuccin-mocha-blue-standard+default.zip)
-- cursor [here](https://www.pling.com/p/2163668)
+- gtk theme [here](https://github.com/b65t/.theme)
+- cursor [here](https://www.pling.com/p/2163665)
 - [Backgrounds](https://github.com/b65t/Background)
