@@ -24,8 +24,8 @@ $background = waypaper
 # ENVIRONMENT VARIABLES
 
 env = XCURSOR_SIZE,24
-env = XCURSOR_THEME,Furina 2.0
-env = HYPRCURSOR_THEME,Furina 2.0
+env = XCURSOR_THEME,Frieren-Winter
+env = HYPRCURSOR_THEME,Frieren-Winter
 env = HYPRCURSOR_SIZE,24
 
 # LOOK AND FEEL

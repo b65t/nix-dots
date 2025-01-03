@@ -10,7 +10,7 @@ gtk = {
       name = "pywal";
     };
     cursorTheme = {
-      name = "Furina 2.0";
+      name = "Frieren-Winter";
     };
       gtk3.extraConfig = {
       gtk-application-prefer-dark-theme = 1;
