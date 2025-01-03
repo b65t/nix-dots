@@ -79,12 +79,13 @@ animations {
     bezier = linear,0,0,1,1
     bezier = almostLinear,0.5,0.5,0.75,1.0
     bezier = quick,0.15,0,0.1,1
+    bezier = over, 0.13, 0.99, 0.29, 1.07 
 
     animation = global, 1, 10, default
     animation = border, 1, 5.39, easeOutQuint
-    animation = windows, 1, 4.79, easeOutQuint
-    animation = windowsIn, 1, 4.1, easeOutQuint, slide
-    animation = windowsOut, 1, 1.49, linear, slide
+    animation = windows, 1, 4.79, over, slide
+    animation = windowsIn, 1, 4.1, over, slide
+    animation = windowsOut, 1, 1.49, over, slide
     animation = fadeIn, 1, 1.73, almostLinear
     animation = fadeOut, 1, 1.46, almostLinear
     animation = fade, 1, 3.03, quick
@@ -211,12 +212,16 @@ bindm = $mainMod, mouse:273, resizewindow
 
 # Example windowrule v1
 # windowrule = float, ^(kitty)$
-windowrule = float, ^(waypaper)$
-windowrule = float, ^(nm-connection-editor)$
-windowrule = float, ^(nemo)$
+#windowrule = float, ^(waypaper)$
+#windowrule = float, ^(nm-connection-editor)$
+#windowrule = float, ^(nemo)$
 
 # Example windowrule v2
 # windowrulev2 = float,class:^(kitty)$,title:^(kitty)$
+windowrulev2 = float,class:^(waypaper)$
+windowrulev2 = float,class:^(nm-connection-editor)$
+windowrulev2 = float,class:^(nemo)$
+windowrulev2 = float,class:^(nwg-look)$
 
 # windowrulev2 = suppressevent maximize, class:.* # You'll probably like this.
 

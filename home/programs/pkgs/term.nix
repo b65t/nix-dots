@@ -24,7 +24,6 @@ home.packages = with pkgs;  [
  w3m
  imagemagick
  neovim
- pokemon-colorscripts-mac
 
 ];
 
