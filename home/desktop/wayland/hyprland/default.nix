@@ -211,11 +211,14 @@ bindm = $mainMod, mouse:273, resizewindow
 
 # Example windowrule v1
 # windowrule = float, ^(kitty)$
+windowrule = float, ^(waypaper)$
+windowrule = float, ^(nm-connection-editor)$
+windowrule = float, ^(nemo)$
 
 # Example windowrule v2
 # windowrulev2 = float,class:^(kitty)$,title:^(kitty)$
 
-windowrulev2 = suppressevent maximize, class:.* # You'll probably like this.
+# windowrulev2 = suppressevent maximize, class:.* # You'll probably like this.
 
 #auto startup
 

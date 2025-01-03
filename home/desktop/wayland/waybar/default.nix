@@ -95,7 +95,7 @@ programs.waybar = {
     };
      "custom/logo" = {
       "format" = "";
-       "on-click" = "wlogout";
+       "on-click" = "~/.nix/scripts/rofi/powermenu.sh";
           };
 
       "memory" = {
@@ -200,6 +200,7 @@ programs.waybar = {
          "(.*)Mozilla Firefox" = "󰈹 Firefox";
 	 "(.*)Discord" = " Discord";
 	 "(.*)Spotify" = "󰓇 Spotify";
+         "(.*)Spotify Free" = "󰓇 Spotify";
 	 "(.*)Waypaper" = " Waypaper";
 	 "(.*)VSCodium" = " VSCodium";
 	 "" = " Desktop";

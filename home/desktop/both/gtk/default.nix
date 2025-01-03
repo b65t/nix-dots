@@ -7,7 +7,7 @@ gtk = {
       name = "Papirus-Dark";
     };
     theme = {
-      name = "catppuccin-mocha-blue-standard+default";
+      name = "pywal";
     };
     cursorTheme = {
       name = "Furina 2.0";
